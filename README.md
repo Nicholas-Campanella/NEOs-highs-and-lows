@@ -1,122 +1,134 @@
+# Project Overview
+ed your Developer Application.
+## Project Name
 
-# Project #1: Your First Application
+NEO's high or lows
 
-### STEP 1: Read the Directions
-1) Read **ALL** of the directions before you start. We will know...
 
-### STEP 2: Pitch Your Project
-Before you start any actual coding, you must meet with your Squad Leader for ~10 minutes to get your app idea approved. Prepare the following materials _before_ your meeting and put them in your README.md:
-- **App Title**: The name of your app.
-- **App Description**: What your app will do.
-- **API**: The API you are using and the information you plan to get from it.
-- **API Snippet**: A sample snippet of JSON from a successful GET request you have made to your API using Postman.
-- **Wireframes**:  The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
-- **MVP**: A list of features you will need to build in order to meet the Minimum Viable Product. This will be the rubric your project will be graded against.
-- **Post-MVP**: A list of additional/advanced features you would like to include in your app after you have met MVP.
-- **Goals**: What you plan to accomplish for each day of the project week.
-- **Priority Matrix**: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as [Cloudinary](https://cloudinary.com/) or a similar hosting service.
-- **Timeframes**: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
+## Project Description
+pick one of four catagories 
+brightest fastest cloesest largest 
+then you will be presented with 2 names of neo's and you have to pick one you think is either (brightest fastest cloesest largest) based on the users disition at the begining of the app 
 
-Are you interested in styling your README.md to make it look nice? Don't know how to include photos or create links? Check out this [Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)!
+## API and Data Sample
 
-### STEP 3: Make a New Repo
-1. [Make a new personal GitHub repo for your project](https://help.github.com/articles/create-a-repo/). **DO NOT FORK THIS REPO.** 
-2. This new repo should be under your personal Github account, not you GA Eneterprize account.
-2. Make sure your new repo is set to "Public" and initialize it with a README.md file. **This will be your project worksheet.**
-3. Send a link for your repository to your Squad Leader.
-4. After your have been approved, clone this new repository down to your machine.
-5. CD into the project directory and touch ```index.html```, ```style.css``` and ```script.js``` files.
-6. Test a commit and push it to make sure everything is connected with ```git commit -m "Go Bees!"```.
+(https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY)
 
-Note: Your repository should **not** be called `project-1`! Think of a name for your application, and then name your repository after your application. 
+```
+"element_count": 24,
+    "near_earth_objects": {
+        "2015-09-08": [
+            {
+                "links": {
+                    "self": "http://www.neowsapp.com/rest/v1/neo/2465633?api_key=DEMO_KEY"
+                },
+                "id": "2465633",
+                "neo_reference_id": "2465633",
+                "name": "465633 (2009 JR5)",
+                "nasa_jpl_url": "http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2465633",
+                "absolute_magnitude_h": 20.36,
+                "estimated_diameter": {
+                    "kilometers": {
+                        "estimated_diameter_min": 0.2251930467,
+                        "estimated_diameter_max": 0.5035469604
+                    },
+                    "meters": {
+                        "estimated_diameter_min": 225.1930466786,
+                        "estimated_diameter_max": 503.5469604336
+                    },
+                    "miles": {
+                        "estimated_diameter_min": 0.1399284286,
+                        "estimated_diameter_max": 0.3128894784
+                    },
+                    "feet": {
+                        "estimated_diameter_min": 738.8223552649,
+                        "estimated_diameter_max": 1652.0570096689
+                    }
+                },
+                "is_potentially_hazardous_asteroid": true,
+                "close_approach_data": [
+                    {
+                        "close_approach_date": "2015-09-08",
+                        "close_approach_date_full": "2015-Sep-08 20:28",
+                        "epoch_date_close_approach": 1441744080000,
+                        "relative_velocity": {
+                            "kilometers_per_second": "18.1279547773",
+                            "kilometers_per_hour": "65260.6371983344",
+                            "miles_per_hour": "40550.4220413761"
+                        },
+                        "miss_distance": {
+                            "astronomical": "0.3027478814",
+                            "lunar": "117.7689258646",
+                            "kilometers": "45290438.204452618",
+                            "miles": "28142173.3303294084"
+                        },
+                        "orbiting_body": "Earth"
+                    }
+                ],
+                "is_sentry_object": false
+            },
+```            
 
-### STEP 4: &#x1F534; Build Your Project MVP — Mandatory To Pass
+## Wireframes
+(https://whimsical.com/neo-s-high-or-lows-DF5aj7PRbeN2hgbuKaNpyh)
 
-#### Your application must meet these requirements:
 
-  1. Built with HTML, CSS, and JavaScript.
-  1. Styled using `Flexbox` or `Grid`.
-  1. Use Axios to make a request to an external data source and insert some of the retrieved data on to the DOM.
-  1. Implement responsive design using at least one media query/breakpoint (i.e. desktop, tablet, mobile, etc).
-  1. Fulfill the build requirements you have specified in your MVP.
-  1. Deployed site to a hosting service like [Github Pages](https://pages.github.com/).
-  1. Make commits to GitHub every day.
-  1. A `README.md` file that contains your project worksheet, a link to your live, deployed site, and any necessary installation instructions such as ```npm i```.
+### MVP/PostMVP
 
-#### 📋 List of APIs
+ 
 
-Below is a non-exhaustive list of some free APIs you can use. There are _many_ APIs out there, however, so if you find one not on this list, feel free to use it. No matter what API you decide on, make sure you can successfully make a GET request before you commit to using it.
+#### MVP 
+*These are examples only. Replace with your own MVP features.*
 
-  1. Weather: https://openweathermap.org/api
-  1. News: https://newsapi.org/
-  1. Giphy: https://developers.giphy.com/
-  1. Pokemon: http://pokeapi.co/
-  1. Card Deck: https://deckofcardsapi.com/
-  1. City of Chicago: https://data.cityofchicago.org/
-  1. Beer: https://www.brewerydb.com/developers
-  1. Chuck Norris: http://www.icndb.com/
-  1. Rick and Morty: https://rickandmortyapi.com/documentation/#rest
-  
-[This site](https://github.com/toddmotto/public-apis) lists a collection APIs as well. Take a look through their libraries and try to find one that interests you. Please note, however, that many APIs will require an authentication key, and some APIs require payment. We **highly suggest** using a free API for your first project dealing with one.
+- Find and use external api 
+- Render data on page 
+- Allow user to choose favorites 
 
-### STEP 5: &#x1F535; Ideas for Post-MVP - Not Mandatory
-- Look into [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) so you can save data to the user's browser 
-- Add a second API.
-- Add creative use of event listeners and UI interaction.
-- Add media queries for responsive design.
-- Add animations.
-- Get input from a UX student on how to make your app have intuitive UI and design.
 
-### STEP 6: Technical Demonstration
 
-All projects will be presented to the class.  Your presentation should:
+## Project Schedule
 
-* Be no longer than 5 minutes in length
-* Show off all features of the app
-* Explain the technical details
-* Explain the technical challenges
-* Explain which improvements you might make
+|  Day | Tasks | Status
+|---|---| ---|
+|Novmebr 8| api selection / Wireframes / Project Approval / Timeframes | Incomplete
+|November 9|core application structure (HTML, CSS, etc.)/MVP| Incomplete
+|Novemebr 10-11| actual code /Initial Clickable Model | Incomplete
+|November 12| Presentations | Incomplete
+|November 13|  | Incomplete
+|Novemebr 14|  | Incomplete
+|November 15|last day for presintations|
+## Priority Matrix
+(https://whimsical.com/JJxoTSL4jAg9cqi3S1NNX4)
 
-Your presentation should **NOT**:
-* Focus on what you didn't accomplish.
 
-You will be sharing your project and your code.  Be prepared to answer questions from the instructors and other students.
+## Timeframes
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 6hrs| 5hrs | 5hrs |
+|api selection|M|2|5|
+|Wireframes|L|1|1|
+|Timeframes|M|1||
+|Project Approval|H|8||
+|core application structure|H|2||
+|MVP|H|2||
+|actual code|H|8||
+|Initial Clickable Model|H|4||
+|Presentations|M|10min||
+|extra steps|||
+||||
 
-Did you read all of the directions before starting? If so write `git commit -m "bee's bee buzz'n"` instead of `git commit -m "first commit"` for your first commit.
 
-### Step 7: Help and Support
+## Code Snippet
 
-1. Each student will be given 5 (five) tokens, redeemable at any time during regular class time (subject to instructors' schedules), for 20 minutes. **Tokens cannot be transferred between students - there is no black market for tokens.**
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-2. Give at least a 10 minutes heads up to an instructor with the link to your project repo and a link to your `issue` ticket. Instructors will not be holding open office hours during project week. This is to allow you to solve issues and errors you run in to on your own and with your classmates. 
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
 
-3. [Sign up here for help with your squad lead.](https://docs.google.com/forms/d/e/1FAIpQLSdNQXP9lOO4-RgXDN6Kg5RXkmydjhsuX9qtwoPwZga2wa8_Fw/viewform)
-
-### Step 8: Grading
-
-#### Hard Requirements
-
-The following requirements **_must_** be met in order for the project to be
-considered complete:
-
-- The project is deployed to GitHub Pages or a custom domain
-- The application renders in the browser and runs without errors
-- The repo has a README that adequately documents the project
-
-We do not give letter grades; it is either a pass/fail. The real benchmark is how much you grow and learn each unit. 
-
-You will receive feedback in a secret gist. The gist will be Slacked out independent of your P1 repo to keep feedback confidential. 
-
-An example of the gist can be found here: [Secret Gist](https://gist.git.generalassemb.ly/SteveVW/6b49d9b08d1edcd203609d843eb8b97f)
-
-If you would like more feedback than the gist, instructors will be available to meet one on one. Please feel free to reach out and schedule a time with your squad leader. 
-
-### Incomplete Projects
-
-Incomplete projects will be given an extension. An instructor will follow up with you to discuss the details of the resubmission.  **Note that you are allowed one extension on only one of the four projects.**
-
-<br>
-
-## PLAGIARISM
-
-Remember. We have a **zero-tolerance policy** towards plagiarism. More on our plagiarism policy can be found in our course wiki's [plagiarism page](https://gist.git.generalassemb.ly/SteveVW/7b780310c82d10df98a4e620abbfbfec).
+## Change Log
+ Use this section to document what changes were made and the reasoning behind those changes.  
