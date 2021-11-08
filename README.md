@@ -2,7 +2,7 @@
 ed your Developer Application.
 ## Project Name
 
-NEO's high or lows
+NEO's Highs and Lows
 
 
 ## Project Description
@@ -90,7 +90,7 @@ then you will be presented with 2 names of neo's and you have to pick one you th
 
 |  Day | Tasks | Status
 |---|---| ---|
-|Novmebr 8| api selection / Wireframes / Project Approval / Timeframes | Incomplete
+|Novmebr 8| api selection / Wireframes / Project Approval / Timeframes | Complete
 |November 9|core application structure (HTML, CSS, etc.)/MVP| Incomplete
 |Novemebr 10-11| actual code /Initial Clickable Model | Incomplete
 |November 12| Presentations | Incomplete
