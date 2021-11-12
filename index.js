@@ -1,7 +1,7 @@
 
 
 async function fetchData(Neo) {
-  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY`;
+  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=4lFjx8G0w6Tug7ee8GgvsHrPDBobT6WWD3ct86CU`;
   try {
     const res = await axios.get(url);
     // console.log(res.data.near_earth_objects['2015-09-07'])
@@ -17,12 +17,34 @@ const div1 = document.querySelector(`#div1`);
 
 function showNeoData(data) {
   console.log(data[0])
+  data.forEach(neo => {
+    const NeoIdNumber = document.createElement(`h1`)
+    NeoIdNumber.innerText = ` N.E.O. id:${neo.id} and name: ${neo.name}`
+    div1.appendChild(NeoIdNumber)
+    const forMore = document.createElement('button')
+    forMore.innerText = "click for more information"
+    div1.appendChild(forMore)
+
+    forMore.addEventListener('submit', (e) => {
+      e.preventDefault()
+      const abs = document.createElement('p')
+      div1.append(abs)
+      console.log(abs)
+
+      abs.innerText = `Absolute Magnitude:${neo.absolute_magnitude_h}`
+
+
+    })
+
+  })
 
   //name
-  const NeoIdNumber = document.createElement(`h1`)
-  NeoIdNumber.innerText = ` N.E.O. id:${data[0].id} and name: ${data[0].name}`
-  div1.appendChild(NeoIdNumber)
 
+
+  // .addEventListener('submit', (e) => {
+  //   e.preventDefualt();
+  //   consol;
+  // }
 
   //   //speed
   //   const NeoRelativeVelocity = document.createElement(`h4`);
