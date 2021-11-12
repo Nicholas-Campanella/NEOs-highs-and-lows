@@ -25,13 +25,25 @@ function showNeoData(data) {
     forMore.innerText = "click for more information"
     div1.appendChild(forMore)
 
-    forMore.addEventListener('submit', (e) => {
+    const neoDiv = document.createElement('div')
+    div1.appendChild(neoDiv)
+
+
+
+    forMore.addEventListener('click', (e) => {
       e.preventDefault()
+      //magnatude
+      //const neoDiv= document.createElement()
       const abs = document.createElement('p')
-      div1.append(abs)
+      //const neoData = document.querySelector('')
+      neoDiv.appendChild(abs)
       console.log(abs)
 
       abs.innerText = `Absolute Magnitude:${neo.absolute_magnitude_h}`
+      //speed
+      const rltv = document.createElement('p')
+      neoDiv.appendChild(rltv)
+      rltv.innerText = `Relative Velocity:${neo.close_approach_data[0].relative_velocity.kilometers_per_second} K/second`
 
 
     })
