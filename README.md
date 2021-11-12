@@ -2,7 +2,7 @@
 ed your Developer Application.
 ## Project Name
 
-NEO's Highs and Lows
+N.E.O.'s Highs and Lows
 
 
 ## Project Description
@@ -80,7 +80,7 @@ then you will be presented with 2 names of neo's and you have to pick one you th
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
+- Find and use external api check
 - Render data on page 
 - Allow user to choose favorites 
 
@@ -109,8 +109,8 @@ then you will be presented with 2 names of neo's and you have to pick one you th
 | Total | H | 6hrs| 5hrs | 5hrs |
 |api selection|M|2|5|
 |Wireframes|L|1|1|
-|Timeframes|M|1||
-|Project Approval|H|8||
+|Timeframes|M|1|1/2|
+|Project Approval|H|8|8|
 |core application structure|H|2||
 |MVP|H|2||
 |actual code|H|8||
