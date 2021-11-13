@@ -18,7 +18,7 @@ const div1 = document.querySelector(`#div1`);
 function showNeoData(data) {
   console.log(data[0])
   data.forEach(neo => {
-    const NeoIdNumber = document.createElement(`h1`)
+    const NeoIdNumber = document.createElement(`h2`)
     NeoIdNumber.innerText = ` N.E.O. id:${neo.id} and name: ${neo.name}`
     div1.appendChild(NeoIdNumber)
     const forMore = document.createElement('button')
@@ -43,7 +43,16 @@ function showNeoData(data) {
       //speed
       const rltv = document.createElement('p')
       neoDiv.appendChild(rltv)
-      rltv.innerText = `Relative Velocity:${neo.close_approach_data[0].relative_velocity.kilometers_per_second} K/second`
+      rltv.innerText = `Relative Velocity:${neo.close_approach_data[0].relative_velocity.kilometers_per_second} Kilometers per second`
+      //clossest approch
+      const clapp = document.createElement('p')
+      neoDiv.appendChild(clapp)
+      clapp.innerText = `Closest Approch:${neo.close_approach_data[0].miss_distance.kilometers} Kilometers`
+      //estimated diameter 
+      const estd = document.createElement('p')
+      neoDiv.appendChild(estd)
+      estd.innerText = `Estimated Diameter:${neo.estimated_diameter.meters.estimated_diameter_max} Meters`
+
 
 
     })
