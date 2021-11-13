@@ -17,9 +17,12 @@ const div1 = document.querySelector(`#div1`);
 
 function showNeoData(data) {
   console.log(data[0])
+  const title = document.createElement(`h1`)
+  title.innerText = `Near Earth Objects from Outer Spaaacce`
+  div1.appendChild(title)
   data.forEach(neo => {
     const NeoIdNumber = document.createElement(`h2`)
-    NeoIdNumber.innerText = ` N.E.O. id:${neo.id} and name: ${neo.name}`
+    NeoIdNumber.innerText = ` N.E.O. id:${neo.id} and Name: ${neo.name}`
     div1.appendChild(NeoIdNumber)
     const forMore = document.createElement('button')
     forMore.innerText = "click for more information"
@@ -40,6 +43,7 @@ function showNeoData(data) {
       console.log(abs)
 
       abs.innerText = `Absolute Magnitude:${neo.absolute_magnitude_h}`
+      // credits Nora Tulchina 
       //speed
       const rltv = document.createElement('p')
       neoDiv.appendChild(rltv)

@@ -74,15 +74,16 @@ then you will be presented with 2 names of neo's and you have to pick one you th
 
 
 ### MVP/PostMVP
-
+ -make the data display in an organized fastion based on N.E.O. attributes
+ -add an appealing syle to the web site 
  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+
 
 - Find and use external api check
-- Render data on page 
-- Allow user to choose favorites 
+- Render data on page check
+- make the data interactive check
 
 
 
@@ -111,24 +112,33 @@ then you will be presented with 2 names of neo's and you have to pick one you th
 |Wireframes|L|1|1|
 |Timeframes|M|1|1/2|
 |Project Approval|H|8|8|
-|core application structure|H|2||
-|MVP|H|2||
-|actual code|H|8||
-|Initial Clickable Model|H|4||
+|core application structure|H|2|1|
+|MVP|H|2|2|
+|actual code|H|8|6|
+|Initial Clickable Model|H|2|2|
 |Presentations|M|10min||
 |extra steps|||
 ||||
 
 
 ## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
+for a simple idea here is alot of logic 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+function showNeoData(data) {
+  console.log(data[0])
+  const title = document.createElement(`h1`)
+  title.innerText = `Near Earth Objects from Outer Spaaacce`
+  div1.appendChild(title)
+  data.forEach(neo => {
+    const NeoIdNumber = document.createElement(`h2`)
+    NeoIdNumber.innerText = ` N.E.O. id:${neo.id} and Name: ${neo.name}`
+    div1.appendChild(NeoIdNumber)
+    const forMore = document.createElement('button')
+    forMore.innerText = "click for more information"
+    div1.appendChild(forMore)
 
+    const neoDiv = document.createElement('div')
+    div1.appendChild(neoDiv)
+```
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
