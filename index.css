@@ -5,6 +5,22 @@
   text-align: center;
   justify-content: center;
   }
+#header{ 
+  padding: 80px;
+  background: rgba(26, 26, 26, 0.4)
+}
+#footer{
+padding: 80px;
+  background: rgba(26, 26, 26, 0.4)
+}
+button{
+  background:#ff0000 ;
+  color: white;
+  border: 0;
+  padding: 6px;
+  font-size: 14px;
+}
+
   @media screen and (max-width:600px ) {
     
     .container h1{
@@ -15,5 +31,8 @@
     }
     .container p{
       font-size:14px ;
+    }
+    button{
+      font-size: 8px;
     }
   }

@@ -19,7 +19,7 @@ function showNeoData(data) {
   //console.log(data[0])
   const title = document.createElement(`h1`)
   title.innerText = `Near Earth Objects from Outer Spaaacce`
-  div1.appendChild(title)
+  header.appendChild(title)
   data.forEach(neo => {
     const NeoIdNumber = document.createElement(`h2`)
     NeoIdNumber.innerText = ` N.E.O. id:${neo.id} and Name: ${neo.name}`

@@ -77,7 +77,7 @@ then you will be presented with 2 names of neo's and you have to pick one you th
 ### MVP/PostMVP
  -make the data display in an organized fastion based on N.E.O. attributes
  -add an appealing syle to the web site 
- 
+ -make the properties more of a drop down bar so that the user can open the data or store it 
 
 #### MVP 
 
