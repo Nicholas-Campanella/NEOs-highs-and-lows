@@ -2,13 +2,14 @@
 ed your Developer Application.
 ## Project Name
 
-N.E.O.'s Highs and Lows
+Near earth Objects From Outer Space 
 
 
 ## Project Description
-pick one of four catagories 
+an interactive list of objects orbataing earth that allows you to veiw four vital atributes of of each object.  
+<!-- pick one of four catagories 
 brightest fastest cloesest largest 
-then you will be presented with 2 names of neo's and you have to pick one you think is either (brightest fastest cloesest largest) based on the users disition at the begining of the app 
+then you will be presented with 2 names of neo's and you have to pick one you think is either (brightest fastest cloesest largest) based on the users disition at the begining of the app  -->
 
 ## API and Data Sample
 
@@ -141,4 +142,4 @@ function showNeoData(data) {
     div1.appendChild(neoDiv)
 ```
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ The scope of the my project change form being a conparision statment of two N.E.O. to an organized list of data pulled from an array.  

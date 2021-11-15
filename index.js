@@ -16,7 +16,7 @@ fetchData()
 const div1 = document.querySelector(`#div1`);
 
 function showNeoData(data) {
-  console.log(data[0])
+  //console.log(data[0])
   const title = document.createElement(`h1`)
   title.innerText = `Near Earth Objects from Outer Spaaacce`
   div1.appendChild(title)
@@ -40,10 +40,10 @@ function showNeoData(data) {
       const abs = document.createElement('p')
       //const neoData = document.querySelector('')
       neoDiv.appendChild(abs)
-      console.log(abs)
+      //console.log(abs)
 
       abs.innerText = `Absolute Magnitude:${neo.absolute_magnitude_h}`
-      // credits Nora Tulchina 
+      // Credits Nora Tulchina 
       //speed
       const rltv = document.createElement('p')
       neoDiv.appendChild(rltv)
